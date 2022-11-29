@@ -1,0 +1,50 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/available
+
+###
+GET http://localhost:3000/api/products/oficina
+
+###
+GET http://localhost:3000/api/products/min/30/max/100
+
+###
+GET http://localhost:3000/api/products/6384acaaf6b483f2f2888084
+
+###
+PUT  http://localhost:3000/api/products/8
+
+
+# Clientes
+
+###
+GET http://https://176f-2a02-2e02-a0c0-2f00-2132-b818-411c-ae
+/api/clients
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+   {
+        "name": "Oscar",
+        "email": "oscar@mail.com",
+        "address": "Calle de Alcoy 11",
+        "age": 28,
+        "active": true
+    }
+
+###
+PUT http://localhost:3000/api/clients/6385ee9f7be2181cbfde3bf2
+Content-Type: application/json
+
+{
+    "age": 35,
+    "active": false
+}
+
+###
+DELETE http://localhost:3000/api/clients/6385ee9f7be2181cbfde3bf2
+
+###
+GET http://localhost:3000/api/clients/6385e7d05aead96f337d7288/product/6384c0d3f6b483f2f2888088
